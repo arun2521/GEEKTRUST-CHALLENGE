@@ -1,0 +1,131 @@
+.main-root{
+  text-align: center;
+  /* padding: 15px;
+  margin: 10px; */
+}
+
+.table-body {
+  height: 20px;
+}
+
+.selected-row {
+  background-color: #f0f0f0;
+}
+
+.search-bar-container {
+  display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.search-input {
+  width: 500px;
+  padding: 15px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0.5rem auto;
+  max-width: 900px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-button {
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pagination-button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination-button-active {
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pagination-button-active:hover {
+  background-color: #0056b3;
+}
+
+.pagination-and-delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search-page-indicator {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  margin-left: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.table-header-row {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .table-header-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .pagination-button,
+  .pagination-button-active {
+    font-size: 0.8rem;
+  }
+  
+  .pagination-container,
+  .pagination-button {
+    margin: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .pagination-and-delete {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+
+
